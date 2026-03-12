@@ -8,7 +8,7 @@ class Employee(Person):
         self.__salary = salary
 
     def get_income(self):
-        return __salary
+        return self.__salary
 
 class Student(Person):
     def __init__(self, name, stipend):
@@ -22,4 +22,5 @@ class WorkingStudent(Employee, Student):
     def __init__(self, name, slalary, stipend):
         Employee.__init__(self, name, slalary)
         Student.__init__(self, name, stipend)
+
 
